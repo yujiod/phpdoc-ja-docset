@@ -1,16 +1,17 @@
 /* General page styles ---------------------------------------------------- */
 body, html {
-	margin: 0px;
+	margin: 0px 10px;
 	padding: 0px;
 	color: black;
 	background-color: white;
 }
 
 body, input, textarea, select, option {
-	font-family: verdana, arial, helvetica, sans-serif;
+	font-family: Ricty, Inconsolata, verdana, arial, helvetica, sans-serif;
+    font-size: 15px;
 }
 code, pre, tt {
-	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",  Monaco, "Courier New", Courier, monospace;
+	font-family: Ricty, Inconsolata, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",  Monaco, "Courier New", Courier, monospace;
 }
 tt.parameter, code.parameter {
 	font-style: italic;
@@ -158,6 +159,10 @@ hr {
 	background-color: black;
 	height: 1px;
 	/* clear: both; has problems in IE and Opera */
+}
+
+body > hr {
+    display: none;
 }
 
 .center {
@@ -774,6 +779,7 @@ div.manualnavbar {
 	color: inherit;
 	padding: 4px;
 	margin-bottom: 10px;
+    display: none;
 }
 div.manualnavbar a {
 	text-decoration: none;
